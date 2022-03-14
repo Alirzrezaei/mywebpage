@@ -7,20 +7,34 @@
     <meta name="description" content="this web page is to practice HTML and CSS to recall my skills.">
     <title>My web page</title>
     <style>
-        .user_img {
+        #header{
+            width: 100%;
+            display: inline-block;
+            background-color: rgb(192, 190, 190);
+        }
+        .user_img img {
             width: 150px;
-            border-radius: 50px;
-            margin: 15px;
+            border-radius: 75px;
+            margin: 45px;
             margin-right: 25px;
-            margin-top: 30px;
+            margin-top: 55px;
             float: left;
         }
         #gitimg{
             width: 45px;
-            border-radius: 50px;
+            border-radius: 22.5px;
+            margin:15px;
 
         }
-
+        #linkedinimg{
+            width: 45px;
+            border-radius: 22.5px;
+            margin: 15px;
+        }
+        #header-text{
+            float: right;
+            margin-right: 25px;
+        }
         .name {
             font-weight: bold;
             font-size: 30px; 
@@ -29,24 +43,45 @@
         }
         .info{
             font-style: italic;
-            
+        }
+        #experience-head{
+            color: rgb(0, 119, 255);
         }
         
     </style>
 </head>
 
 <body>
-  
-    <img class="user_img" src="images/my_img.jpg" alt="image not loaded">
-    <p class="name">Alireza Rezaei</p>
-    <p class="info">Email: alireza.rezaei.nsn@gmail.com</p>
-    <p class="info">tel: +49(0)17660465774</p>
-    <p class="info">Address: Boockholtzstr. 3, 22880 Wedel, Germany</p>
-    <a href="https://github.com/Alirzrezaei"> <img id="gitimg" src="images/github.png" alt="Image not loaded"></a>
-    
+    <div id="header">
+        <div class="user_img"><img src="images/my_img.jpg" alt="image not loaded"></div>
+        <div id="header-text">
+            <p class="name">Alireza Rezaei</p>
+            <p class="info">Email: alireza.rezaei.nsn@gmail.com</p>
+            <p class="info">tel: +49(0)17660465774</p>
+            <p class="info">Address: Boockholtzstr. 3, 22880 Wedel, Germany</p>
+            <a href="https://github.com/Alirzrezaei"> <img id="gitimg" src="images/github.png" alt="Image not loaded"></a>
+            <a href="https://www.linkedin.com/in/alireza-rezaei-5a689114"><img id="linkedinimg" src="images/linkedin.png" alt="Image not loaded"></a>
+        </div>
 
-    <h2>Experience</h2>
-    <h4>Werking student (Software Developer) at DPS Engineering, June 2019-March 2022</h4>
+    </div>
+   
+    
+    <div id="information-body">
+        <div id="experience">
+            <h2 id="experience-head">Experience</h2>
+            <h4>Werking Student (Software Developer) at DPS Engineering, June 2019-March 2022</h4>
+
+            <h4>IT Technician/Officer at RMA Group Afghanistan, January 2013-May 2017</h4>
+            
+            <h4>IT Administrator at Nokia Siemens Network, May 2008-December 2012</h4>
+        </div>
+        <div id="education">
+
+            
+        </div>
+
+    </div>
+   
 
 </body>
 
